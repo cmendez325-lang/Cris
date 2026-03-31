@@ -1,0 +1,361 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e6e3e3;
+  color: #292828;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: rgba(77, 76, 76, 0.95);
+  padding: 5px 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header nav .logo {
+  font-family: "Playwrite AT", cursive;
+  font-size: 1.5rem;
+  color: #967348;
+  text-decoration: none;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+}
+header nav ul a {
+  color: #494444;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+header nav ul a:hover {
+  color: #967348;
+}
+
+#hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)), url("Imagenes/Parroquia Nuestra Señora del Carmen copia.webp");
+  background-size: cover;
+  background-position: center;
+}
+#hero h2 {
+  font-family: "Playwrite AT", serif;
+  font-size: 2.5rem;
+  color: #a07f54;
+  margin-bottom: 20px;
+}
+#hero p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+#hero article h3 {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1rem;
+  color: #967348;
+}
+#hero button {
+  background: #967348;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#hero button a {
+  color: #494444;
+  text-decoration: none;
+  font-weight: bold;
+}
+#hero button:hover {
+  background: #a07f54;
+  transform: translateY(-3px);
+}
+
+#projects {
+  padding: 140px 20px 80px;
+  background-color: #cecdcd;
+  text-align: center;
+}
+#projects h2 {
+  font-family: "Playwrite AT", cursive;
+  color: #967348;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+#projects .container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+}
+#projects article {
+  background-color: #1a1a1a;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #333;
+  transition: 0.3s ease;
+}
+#projects article img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(40%);
+  transition: 0.5s;
+}
+#projects article .info-card {
+  padding: 25px;
+  text-align: center;
+}
+#projects article .info-card h3 {
+  color: #967348;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+#projects article .info-card p {
+  font-size: 0.95rem;
+  color: #bbb;
+  line-height: 1.5;
+  margin: 0;
+}
+#projects article:hover {
+  transform: translateY(-10px);
+  border-color: #967348;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+#projects article:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+#toolkit {
+  background-color: #121212;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+#toolkit h2 {
+  color: #967348;
+  font-family: "Playwrite AT", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+#toolkit .container-toolkit {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  width: 100%;
+  max-width: 1200px;
+}
+#toolkit .toolkitCat {
+  text-align: center;
+  min-width: 200px;
+}
+#toolkit .toolkitCat i {
+  font-size: 3rem;
+  color: #967348;
+  margin-bottom: 15px;
+  display: block;
+  transition: 0.3s;
+}
+#toolkit .toolkitCat i:hover {
+  transform: scale(1.2) rotate(5deg);
+  filter: drop-shadow(0 0 8px #967348);
+}
+#toolkit .toolkitCat h3 {
+  color: #967348;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+#toolkit .toolkitCat .toolkitList {
+  list-style: none;
+  padding: 0;
+}
+#toolkit .toolkitCat .toolkitList .toolkitItem {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+#aboutMe {
+  padding: 100px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+#aboutMe h2 {
+  font-family: "Playwrite AT", cursive;
+  color: #121212;
+  margin-bottom: 40px;
+}
+#aboutMe div {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #494444;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+}
+#aboutMe div p {
+  color: #444;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+#contactMe {
+  padding: 120px 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+}
+#contactMe .container-contact {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+#contactMe .container-contact h2 {
+  font-family: "Playwrite AT", cursive;
+  color: #121212;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+#contactMe .container-contact form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#contactMe .container-contact form label {
+  color: #967348;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+#contactMe .container-contact form input, #contactMe .container-contact form textarea {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+#contactMe .container-contact form input::-moz-placeholder, #contactMe .container-contact form textarea::-moz-placeholder {
+  color: #888;
+}
+#contactMe .container-contact form input::placeholder, #contactMe .container-contact form textarea::placeholder {
+  color: #888;
+}
+#contactMe .container-contact form button {
+  background-color: #967348;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 12px 50px;
+}
+#contactMe .container-contact form button:hover {
+  background-color: #7d5f3a;
+  transform: scale(1.05);
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #222;
+  background-color: #121212;
+}
+footer h5 {
+  color: #666;
+  font-size: 0.55rem;
+  font-weight: normal;
+  margin: 0;
+  letter-spacing: 1px;
+}
+footer p {
+  color: #444;
+  font-size: 0.75rem;
+  margin-top: 5px;
+}
+
+.btn-reserva {
+  display: inline-block;
+  background: #967348;
+  color: #494444;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: 0.4s;
+}
+.btn-reserva:hover {
+  background: #a07f54;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  #hero h2 {
+    font-size: 1.8rem;
+  }
+}
+.transition-nav {
+  transition: background-color 0.5s ease, padding 0.5s ease;
+  padding: 20px 0;
+  background-color: transparent;
+}
+.transition-nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  padding: 10px 0;
+  border-bottom: 1px solid #967348;
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.nav-link:hover {
+  color: #967348 !important;
+}/*# sourceMappingURL=Style.css.map */
